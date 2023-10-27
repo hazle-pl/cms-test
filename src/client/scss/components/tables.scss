@@ -1,0 +1,108 @@
+table{
+    width: 100%;
+
+    &#my-stores-table{
+
+        tbody{
+            overflow: scroll ;
+            display: flex;
+            flex-direction: column;
+            gap: $padding;
+            tr{
+                display: flex;
+                padding: $padding;
+                border-radius: $radius;
+                border: none;
+                box-shadow: 0px 0px 5px $primary-100;
+                background-color: $neutral-100;
+                td{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                
+                    &.logo{
+                        img{
+                            width: 100px;
+                        }
+                    }
+                    &.action{
+                        gap: 20px;
+                        
+                        a{
+                            font-size: 1.3rem;
+                            background-color: $primary-100;
+                            padding: $half-padding;
+                            border-radius: $radius;
+                            width: 50px;
+                            height: auto;
+                            aspect-ratio: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+
+                            i{
+                                color: $primary-500;
+                            }
+                        }
+                        button{
+                            background-color: $neutral-300;
+                            padding: $half-padding;
+                            border-radius: $radius;
+                            border: none;
+                            width: 50px;
+                            height: auto;
+                            aspect-ratio: 1;
+
+                            i{
+                                font-size: 1.3rem;
+                            }
+                        }
+                        >*:first-child{
+                            margin-right: $padding
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &#top-country-traffic{
+        tr{
+            td{
+                padding: $half-padding;
+                border-bottom: 2px solid $neutral-200;
+                width: 0px;
+                img{
+                    border-radius: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    width: 40px;
+                }
+            }
+           #country-icon{
+            width: 10%;
+           }
+        }
+    }
+    &#traffic-source{
+        tr{
+            td{
+                padding: $half-padding;
+                border-bottom: 2px solid $neutral-200;
+                width: 0px;
+                img{
+                    aspect-ratio: 1;
+                    object-fit: contain;
+                    width: 30px;
+
+                    svg{
+                        fill: pink;
+                    }
+                }
+            }
+           #traffic-icon{
+            width: 10%;
+           }
+        }
+    }
+}

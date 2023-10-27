@@ -1,0 +1,21 @@
+.nav-tabs{
+    border-bottom: none;
+    .nav-item{
+        margin-bottom: 0px;
+        button{
+            border: none;
+            outline: none;
+            background-color: $neutral-100;
+
+            &.active{
+                background-color: $primary-500;
+                color: $neutral-100;
+            }
+        }
+    }
+}
+
+.tab-content{
+    border-radius: 0px $padding $padding $padding;
+    overflow-x: scroll;
+}
